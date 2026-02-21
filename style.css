@@ -1,57 +1,93 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f7f5;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding: 0;
-  text-align: center;
+  background: linear-gradient(to bottom, #eef7f5, #ffffff);
+  color: #333;
 }
 
 header {
-  background-color: #cde7e3;
-  padding: 30px;
+  background: #a8dadc;
+  padding: 50px 20px;
+  text-align: center;
 }
 
-h1 {
+header h1 {
   margin: 0;
+  font-size: 40px;
+  color: #1d3557;
 }
 
-.confession-box {
-  margin: 30px;
+header p {
+  margin: 10px 0;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #1d3557;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #457b9d;
+}
+
+.section {
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
 }
 
 textarea {
-  width: 60%;
-  height: 100px;
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  width: 100%;
+  height: 120px;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  resize: none;
 }
 
 button {
-  display: block;
-  margin: 10px auto;
-  padding: 10px 20px;
-  background-color: #7dbbb3;
+  margin-top: 15px;
+  padding: 12px 30px;
+  background-color: #457b9d;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 25px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
-  background-color: #5aa39a;
+  background-color: #1d3557;
 }
 
-.confession-feed {
-  margin: 40px;
+.confession-feed .post {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  text-align: left;
 }
 
-.post {
-  background-color: white;
-  padding: 15px;
-  margin: 10px auto;
-  width: 60%;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.article {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f1f1f1;
+  margin-top: 40px;
 }
