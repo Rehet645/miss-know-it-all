@@ -10,7 +10,11 @@ function addConfession() {
   }
 
   let confessions = JSON.parse(localStorage.getItem("confessions")) || [];
-  confessions.push(confessionText);
+
+  confessions.push({
+    text: confessionText,
+    time: new Date().toLocaleString()
+  });
 
   localStorage.setItem("confessions", JSON.stringify(confessions));
 
@@ -22,12 +26,19 @@ function loadConfessions() {
   const confessionsDiv = document.getElementById("confessions");
   confessionsDiv.innerHTML = "";
 
-  let confessions = JSON.parse(localStorage.getItem("confessions")) || [];
+  let confessions = JSON.parse(localStorage.getItem("confessions"));
 
-  confessions.reverse().forEach(text => {
+  if (!confessions || confessions.length === 0) {
+    confessions = [
+      { text: "Sometimes I feel overwhelmed but I smile anyway.", time: "Demo Post" },
+      { text: "It’s okay to not be okay.", time: "Demo Post" }
+    ];
+  }
+
+  confessions.slice().reverse().forEach(item => {
     const post = document.createElement("div");
     post.classList.add("post");
-    post.textContent = text;
+    post.innerHTML = `<p>${item.text}</p><small>${item.time}</small>`;
     confessionsDiv.appendChild(post);
   });
 }
