@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f7f5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #cde7e3;
+  padding: 30px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.confession-box {
+  margin: 30px;
+}
+
+textarea {
+  width: 60%;
+  height: 100px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #7dbbb3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5aa39a;
+}
+
+.confession-feed {
+  margin: 40px;
+}
+
+.post {
+  background-color: white;
+  padding: 15px;
+  margin: 10px auto;
+  width: 60%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
